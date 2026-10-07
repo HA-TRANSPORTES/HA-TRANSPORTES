@@ -1,0 +1,82 @@
+{
+  "version": "10.0",
+  "business": {
+    "name": "HA TRANSPORTES",
+    "whatsapp": "573133560957"
+  },
+  "general": {
+    "fuelPricePerGallon": 18000,
+    "cargoKmRate": 500,
+    "passengerKmRate": 650,
+    "minFare": 0,
+    "volumeThresholdM3": 4,
+    "volumeSurchargePct": 10,
+    "loadingFee": 20000,
+    "unloadingFee": 20000,
+    "roundTripSurchargePct": 100,
+    "sameCityBaseKm": 5
+  },
+  "vehicles": {
+    "kameyo": {
+      "name": "Motocarguero MTDR300 Kameyo",
+      "maxKg": 1000,
+      "fuelKmPerGallon": 90,
+      "baseByWeight": [
+        [
+          100,
+          45000
+        ],
+        [
+          250,
+          55000
+        ],
+        [
+          500,
+          70000
+        ],
+        [
+          750,
+          90000
+        ],
+        [
+          1000,
+          110000
+        ]
+      ]
+    },
+    "tvs": {
+      "name": "Motocarro TVS King Deluxe Plus GS+",
+      "maxPassengers": 3,
+      "baseFare": 35000,
+      "kmRate": 650,
+      "fuelKmPerGallon": null
+    },
+    "tracker": {
+      "name": "Chevrolet Tracker 1.8",
+      "maxPassengers": 5,
+      "baseFare": 55000,
+      "fuelKmPerGallon": 35,
+      "kmRate": 650
+    }
+  },
+  "tolls": {
+    "Pereira|Cartago|tracker": 18700,
+    "Cartago|Pereira|tracker": 18700,
+    "Pereira|Santa Rosa de Cabal|tracker": 17800,
+    "Santa Rosa de Cabal|Pereira|tracker": 17800,
+    "Dosquebradas|Santa Rosa de Cabal|tracker": 17800,
+    "Santa Rosa de Cabal|Dosquebradas|tracker": 17800
+  },
+  "routesFallback": {
+    "Pereira|Dosquebradas": 8,
+    "Pereira|La Virginia": 30,
+    "Pereira|Cartago": 32,
+    "Pereira|Santa Rosa de Cabal": 14,
+    "Dosquebradas|La Virginia": 38,
+    "Dosquebradas|Cartago": 40,
+    "Dosquebradas|Santa Rosa de Cabal": 18,
+    "La Virginia|Cartago": 22,
+    "La Virginia|Santa Rosa de Cabal": 44,
+    "Cartago|Santa Rosa de Cabal": 55
+  }
+}
